@@ -1,0 +1,242 @@
+.navbar {
+  position: fixed;
+  z-index: 1001;
+  margin-top: 0;
+  background-color: #e8d1e4;
+  width: 100%;
+  height: 70px;
+}
+
+.navlink {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  color: #323232;
+  text-decoration: none;
+  font-family: "BioRhyme", serif;
+}
+
+.social-links {
+  visibility: visible;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  color: #323232;
+  text-decoration: none;
+  font-family: "BioRhyme", serif;
+}
+
+.navlink:active {
+  color: #f9f871;
+  text-decoration: underline;
+}
+
+.navlink:hover,
+.social-links:hover {
+  color: #f9f871;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 1001;
+  margin-left: 10px;
+  right: 0;
+  top: 10px;
+  background-color: #323232;
+  border-radius: 5px;
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .navlink {
+    visibility: hidden;
+  }
+  .hamburger {
+    visibility: visible;
+  }
+  .social-links {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: -60px;
+  }
+}
+
+/* MENU STYLES */
+.menu-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  color: #323232;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  z-index: 5;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background-color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  z-index: 10;
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  z-index: 10;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  z-index: 10;
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  z-index: 10;
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  z-index: 10;
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  z-index: 8;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  z-index: 5;
+  background-image: linear-gradient(
+    to bottom,
+    #e8d1e4,
+    #f0cfdf,
+    #f7cdd8,
+    #fcccd0,
+    #ffccc6,
+    #ffcdbc,
+    #ffcfb0,
+    #ffd2a6,
+    #ffd998,
+    #ffe28a,
+    #ffec7c,
+    #f9f871
+  );
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.menu-wrap .menu > div > div {
+  padding-top: 100px;
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  z-index: 10;
+  list-style: none;
+  color: #323232;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  z-index: 10;
+  color: #323232;
+  text-decoration: none;
+  transition: color 0.6s ease-in-out;
+}
+
+.menu-navlink:hover {
+  color: #f9f871;
+  cursor: pointer;
+
+  transform: scale(1.1);
+}

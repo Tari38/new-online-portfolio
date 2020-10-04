@@ -1,0 +1,66 @@
+.portfolio-main {
+  font-family: "BioRhyme", serif;
+  color: #323232;
+  margin: 0;
+  padding: 1.5rem 0;
+  border: 1px solid #201f1f17;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #e8d1e4,
+    #f0cfdf,
+    #f7cdd8,
+    #fcccd0,
+    #ffccc6,
+    #ffcdbc,
+    #ffcfb0,
+    #ffd2a6,
+    #ffd998,
+    #ffe28a,
+    #ffec7c,
+    #f9f871
+  );
+}
+
+.title-text,
+h1 {
+  display: block;
+  padding-top: 6%;
+  font-size: 56px;
+}
+
+.d-block {
+  justify-content: space-around;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  border: 1px solid #ffdd8b;
+  background-color: #e8d1e4;
+}
+.card-deck {
+  justify-content: space-around;
+  padding: 10px;
+}
+.card {
+  justify-content: space-around;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: solid 2px rgb(180, 212, 212);
+  background-color: rgb(207, 247, 247);
+}
+.card-info {
+  text-align: center;
+  line-height: 1.25;
+  margin: 20px;
+}
+.card-info a {
+  color: #323232;
+  font-weight: bold;
+}
+.card-info a:hover {
+  color: #f9f871;
+  text-decoration: underline;
+}
