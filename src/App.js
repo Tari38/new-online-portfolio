@@ -11,7 +11,7 @@ import Footer from "./components/partials/Footer";
 import "./App.css";
 
 function App() {
-  return (
+  return ( 
     <>
       <Router>
         <div className="App">
