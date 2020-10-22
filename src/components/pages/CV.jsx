@@ -31,6 +31,7 @@ class CV extends Component {
                 <h5>Git</h5>
                 <h5>Responsive Web Design</h5>
                 <h5>Webpack</h5>
+                <h5>C++ with Unreal Engine 4</h5>
               </div>
             </div>
 
@@ -63,6 +64,12 @@ class CV extends Component {
                   to help build, maintain and enhance company software, apps and
                   websites.
                 </li>
+                <li>
+                  {" "}
+                  ...I am an avid gamer, and am currently doing an online learning
+                  course on how to code with C++ and Unreal Engine 4 which I
+                  am really enjoying.
+                  </li>
               </p>
               <hr />
               <h2 className="cv-info-headers">WORK EXPERIENCE</h2>
@@ -92,6 +99,7 @@ class CV extends Component {
                   Security)
                 </li>
                 <li>Udemy - The MERN Fullstack Guide</li>
+                <li>Udemy - Unreal Engine C++ Developer</li>
               </p>
               <br />
 
