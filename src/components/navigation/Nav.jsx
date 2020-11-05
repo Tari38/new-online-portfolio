@@ -10,7 +10,7 @@ function NavBar() {
     <>
       <Navbar className="navbar justify-content-between" light expand="md">
         <div className="navlink">
-        <Link classNAme="navlink" to="/components/pages/Home"> <img src={Logo}></img></Link>
+        <Link className="navlink" to="/components/pages/Home"> <img id="brandLogo" src={Logo}></img></Link>
           <Link className="navlink" to="/components/pages/Home">
             Home
           </Link>
