@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "reactstrap";
 import { Link } from "react-router-dom";
-import { Logo } from "./img/SDWebDevelopment.png";
+// import { Logo } from "./img/SDWebDevelopment.png";
 
 import "./Nav.css";
 
@@ -10,7 +10,6 @@ function NavBar() {
     <>
       <Navbar className="navbar justify-content-between" light expand="md">
         <div className="navlink">
-        <Link className="navlink" to="/components/pages/Home"> <img id="brandLogo" src={Logo}></img></Link>
           <Link className="navlink" to="/components/pages/Home">
             Home
           </Link>
