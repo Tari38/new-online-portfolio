@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { CardBody, CardImg } from "reactstrap";
-import Calc from "../../img/basic-calc.jpg";
+import Calc from "../../img/basic-calc.png";
 // import "../styles/Portfolio.css";
 
 export default class Calculators extends Component {
