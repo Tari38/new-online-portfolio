@@ -5,6 +5,7 @@ import DailyUIDesigns from "./portfolio/dailyui-designs";
 import NewsLetterSignup from "./portfolio/newsletter-signup";
 import Tindog from "./portfolio/tindog";
 import BullCowGame from "./portfolio/bullcow";
+import Calculators from "./portfolio/calculators";
 
 import "../pages/styles/Portfolio.css";
 
@@ -24,11 +25,14 @@ export default function Portfolio() {
             <DailyUIDesigns />
           </Card>
           <Card className="card">
-            <Tindog />
+            <Calculators />
           </Card>
         </CardDeck>
 
         <CardDeck className="card-deck">
+          <Card className="card">
+            <Tindog />
+          </Card>
           <Card className="card">
             <NewsLetterSignup />
           </Card>
